@@ -10,9 +10,9 @@ spec:
     targetRevision: main # Replace with your desired version
     path: helm
     helm:
-      valueFiles: |
+      valueFiles:
         - values.yaml
-        - values-dev.yaml # Overrides values.yaml
+        - values-dev.yaml
   destination:
     server: 'https://default.svc'
     namespace: roboshop-dev
