@@ -15,7 +15,7 @@ spec:
         - values-dev.yaml
   destination:
     server: 'https://default.svc'
-    namespace: roboshop-dev
+    namespace: argocd-1
   syncPolicy:
     automated:
       prune: true
