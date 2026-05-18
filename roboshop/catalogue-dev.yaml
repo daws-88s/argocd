@@ -14,8 +14,8 @@ spec:
         - values.yaml
         - values-dev.yaml
   destination:
-    server: 'https://default.svc'
-    namespace: argocd-1
+    server: 'https://kubernetes.default.svc'
+    namespace: roboshop-dev
   syncPolicy:
     automated:
       prune: true
