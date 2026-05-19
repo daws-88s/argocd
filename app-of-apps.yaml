@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: root-cluster
-  namespace: argocd-1
+  namespace: argocd
 spec:
   project: default
   source:
@@ -11,7 +11,7 @@ spec:
     path: applications
   destination:
     server: https://kubernetes.default.svc # current EKS cluster
-    namespace: argocd-1
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true # if deleted in git, delete in cluster also
