@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/daws-88s/catalogue-unit-tests.git'
+    repoURL: 'https://github.com/daws-88s/catalogue.git'
     targetRevision: main # Replace with your desired version
     path: helm
     helm:
