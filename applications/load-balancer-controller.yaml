@@ -16,7 +16,7 @@ spec:
           create: true
           name: aws-load-balancer-controller
           annotations:
-            arn:aws:iam::160885265516:role/roboshop-dev-aws-load-balancer-controller
+            eks.amazonaws.com/role-arn: arn:aws:iam::160885265516:role/roboshop-dev-aws-load-balancer-controller
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: kube-system
